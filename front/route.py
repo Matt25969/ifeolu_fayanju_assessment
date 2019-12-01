@@ -10,7 +10,12 @@ def home():
 def character():
     return render_template('character.html', title='Character')
 
-@app.route('/party')
-def party():
-    return render_template('party.html', title='Party')
+@app.route('/camp')
+def campaign():
+    return render_template('campaign.html', title='Campaign')
+
+@app.route('/register')
+def register():
+    return render_template('register.html', title='Register')
+
 
